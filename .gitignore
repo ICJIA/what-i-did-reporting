@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Package manager files
+package-lock.json  # npm (not preferred)
+yarn-error.log
+.yarn-integrity
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Generated reports (ignore actual reports but keep the directory)
+reports/*
+!reports/.gitkeep
+
+# Sample reports are tracked
+!sample-reports/
+
+# Editor directories and files
+.idea
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
