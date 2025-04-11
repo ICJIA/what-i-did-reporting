@@ -28,7 +28,7 @@ Each audit log entry must include:
 Below is a complete sample entry showing exactly how each audit log entry should be structured:
 
 ```markdown
-### 2025-04-10 (Security Enhancement and Bug Fix)
+### YYYY-MM-DD (Security Enhancement and Bug Fix)
 - Implemented enhanced password hashing and fixed user authentication bypass vulnerability.
 - Files modified/created:
   - `src/auth/password.js`: Updated password hashing algorithm from MD5 to bcrypt with 12 rounds of salting
@@ -55,6 +55,7 @@ This sample demonstrates the exact format, level of detail, and structure requir
 - **Developer Focus**: Focus on information that would help a new developer understand the codebase and the rationale behind changes
 - **Completeness**: Document ALL significant changes, including refactoring, security updates, and documentation improvements
 - **Accuracy**: Use the actual date when creating entries, not placeholder dates
+- **Current Date Generation**: ALWAYS generate dates based on the current date when creating new entries. Each new entry should first get the current date, and then use that date for the log entry. Never use hardcoded dates.
 - **Consistency**: Maintain consistent formatting and level of detail across all entries
 
 ## Implementation in Projects

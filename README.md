@@ -145,8 +145,14 @@ Example reports are included in the `sample-reports` directory to show the expec
 ├── sample-reports/         # Example report templates
 ├── .env.example           # Environment variables template
 ├── .nvmrc                  # Node.js version specification
+├── audit-log.md           # Chronological record of significant changes
+├── audit-log-rules.md     # Guidelines for maintaining the audit log
 └── README.md              # Project documentation
 ```
+
+## Audit Log
+
+This project maintains an [audit log](audit-log.md) that provides a chronological record of all significant changes made to the application. The audit log follows the format and guidelines defined in the [audit-log-rules.md](audit-log-rules.md) file and serves as both a record for external auditors and a reference for developers who need to understand the application's evolution and design decisions.
 
 ## Understanding GitHub Activity Reports
 
